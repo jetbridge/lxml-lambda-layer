@@ -1,0 +1,18 @@
+service: libxml2-py38
+
+provider:
+  name: aws
+  profile: jb
+  region: ${opt:region, 'eu-west-1'}
+  stage: prod
+
+layers:
+  libxml2:
+    path: build
+    name: libxml2-py38
+    description: Provides lxml for python
+    compatibleRuntimes:
+      - python3.8
+    allowedAccounts:
+      - '*'
+    retain: true
