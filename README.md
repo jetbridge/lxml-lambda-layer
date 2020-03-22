@@ -1,10 +1,7 @@
-# Paramiko Python SSH Lambda Layer
+# LXML2 Python Lambda Layer
 By JetBridge.
 
 ## ARN
-### Python 3.7
-- arn:aws:lambda:us-west-2:898466741470:layer:paramiko-py37:1
-- arn:aws:lambda:eu-central-1:898466741470:layer:paramiko-py37:1
 ### Python 3.8
 - arn:aws:lambda:eu-west-1:898466741470:layer:libxml2-py38:2
 - arn:aws:lambda:eu-central-1:898466741470:layer:libxml2-py38:1
@@ -15,16 +12,7 @@ If using serverless, you will need the following in your `serverless.yml`:
 custom:
   pythonRequirements:
     noDeploy:
-      - bcrypt
-      - paramiko
-      - cryptography
-      - nacl
-      - pycparser
-      - asn1crypto
-      - cffi
-      - boto3
-      - botocore
-      - docutils
+      - lxml
 ```
 
 ## Regions
